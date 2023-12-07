@@ -167,3 +167,7 @@ header img {
   height: auto;  /* Maintain the image's aspect ratio */
   padding: auto;  
 }
+ function goToPaymentScreen() {
+    // Assuming you want to navigate to the payment screen (payment-screen.html)
+    window.location.href = 'thank-you.html'; // Update the URL to point to the thank-you page
+  }
