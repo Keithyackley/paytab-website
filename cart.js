@@ -69,3 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
       window.location.href = 'paymentscreen.html';
     }
   });
+ function goToPaymentScreen() {
+    // Assuming you want to navigate to the payment screen (payment-screen.html)
+    window.location.href = 'ThankYou.html'; // Update the URL to point to the thank-you page
+  }
