@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    margin-bottom: 15px;
+    padding: 8px;
+    background: #f2f2f2;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style form inputs and select */
+  input,
+  select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the submit button */
+  button {
+    padding: 12px;
+    background-color: #9029c0;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9029c0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* Style the main content */
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+background-image: url('C:\Users\keith.yackley\Pictures\Camera Roll\ComericaPark.jpg'); 
+  background-size: cover;
+  background-position: center;
+  }
+  
+  /* Style the thank-you message */
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #080808;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    main {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  payment-option {
+    margin-bottom: 15px;
+  }
+  
+  /* Style the Venmo image */
+  .payment-option img {
+    max-width: 50px; /* Adjust the width as needed */
+    max-height: 20px; /* Adjust the height as needed */
+  }
+
+  .drink-option {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .drink-option img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the shopping cart */
+  .shopping-cart {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  #checkout-button {
+    display: block;
+    margin: 20px auto; /* Adjust the margin as needed */
+    padding: 10px 20px;
+    font-size: 16px;
+  }

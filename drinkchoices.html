@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Options - PAYTAB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="C:\Users\keith.yackley\Pictures\Camera Roll\Paytablogo.png" alt="PayTab Logo">
+  </header>
+  <main>
+    <h2>Choose Your Drink</h2>
+    <div class="drink-option">
+      <img src="C:\Users\keith.yackley\Pictures\Camera Roll\coorslight.webp" alt="Drink 1">
+      <h3>16oz Coors Light</h3>
+      <p>$8.99</p>
+      <label for="quantity1">Quantity:</label>
+      <input type="number" id="quantity1" name="quantity1" value="0" min="0">
+      <button class="add-to-cart" data-price="8.99" data-drink="Drink 1">Add to Cart</button>
+    </div>
+
+    <div class="drink-option">
+      <img src="C:\Users\keith.yackley\Pictures\Camera Roll\millerlite.webp" alt="Drink 2">
+      <h3>16oz Miller Lite</h3>
+      <p>$7.99</p>
+      <label for="quantity2">Quantity:</label>
+      <input type="number" id="quantity2" name="quantity2" value="0" min="0">
+      <button class="add-to-cart" data-price="7.99" data-drink="Drink 2">Add to Cart</button>
+    </div>
+
+    <div class="tip-section">
+      <h3>Tip</h3>
+      <label for="tip">Enter Tip Dollar Amount:</label>
+      <input type="text" id="tip" name="tip" placeholder="Enter tip amount">
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="shopping-cart">
+      <h3>Shopping Cart</h3>
+      <ul id="cart-items"></ul>
+      <p id="tip-amount">Tip: $<span id="tip-total">0.00</span></p>
+      <p>Total: $<span id="total">0.00</span></p>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
+
+    <!-- ... Add more drink options as needed ... -->
+
+  <script src="cart.js"></script> <!-- Include a separate JavaScript file for cart functionality -->
+</body>
+</html>
+
+<body>
+  <!-- ... (previous body content) ... -->
+
+  <!-- Button to go to the payment screen -->
+  <button id="checkout-button">Proceed to Payment</button>
+
+  <script src="cart.js"></script>
+</body>
+</html>

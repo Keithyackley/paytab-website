@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - PAYTAB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="C:\Users\keith.yackley\Pictures\Camera Roll\Paytablogo.png" alt="PayTab Logo">
+  </header>
+  <main>
+    <form action="drink-options.html">
+      <label for="section">Section:</label>
+      <input type="text" id="section" name="section" required>
+
+      <label for="row">Row:</label>
+      <input type="text" id="row" name="row" required>
+
+      <label for="seat">Seat:</label>
+      <input type="text" id="seat" name="seat" required>
+
+      <button type="submit">Next</button>
+    </form>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Options - PAYTAB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="C:\Users\keith.yackley\Pictures\Camera Roll\Paytablogo.png" alt="PayTab Logo">
+  </header>
+  <main>
+    <h2>Choose Your Drink</h2>
+    <form action="payment-screen.html">
+      <label for="drink">Select a Drink:</label>
+      <select id="drink" name="drink" required>
+        <option value="water">Water</option>
+        <option value="soda">Soda</option>
+        <option value="coffee">Coffee</option>
+      </select>
+
+      <button type="submit">Next</button>
+    </form>
+  </main>
+</body>
+</html>
+<!-- payment-screen.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - PAYTAB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="C:\Users\keith.yackley\Pictures\Camera Roll\Paytablogo.png" alt="PayTab Logo">
+  
+  </header>
+  <main>
+    <h2>Payment</h2>
+  
+
+      <h3>Payment Options:</h3>
+
+      <!-- Venmo Section -->
+      <div class="payment-option">
+        <input type="radio" id="venmo" name="payment" value="venmo">
+        <label for="venmo">Venmo</label>
+        <img src="C:\Users\keith.yackley\Pictures\Camera Roll\venmo.webp" alt="Venmo Logo">
+      </div>
+
+      <!-- PayPal Section -->
+      <div class="payment-option">
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">PayPal</label>
+        <img src="C:\Users\keith.yackley\Pictures\Camera Roll\paypal.png" alt="PayPal Logo">
+      </div>
+
+      <!-- Credit Card Section -->
+      <div class="payment-option">
+        <input type="radio" id="credit-card" name="payment" value="credit-card">
+        <label for="credit-card">Credit Card</label>
+        <img src="C:\Users\keith.yackley\Pictures\Camera Roll\Major-Credit-Card-Logo-PNG-Pic.png" alt="Credit Card Logo">
+      </div>
+      <form action="thank-you.html">
+        <label for="tip">Tip:</label>
+        <input type="text" id="tip" name="tip" placeholder="Enter tip amount">
+      <button type="submit">Submit Payment</button>
+    </form>
+  </main>
+</body>
+</html>
