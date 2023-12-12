@@ -21,11 +21,7 @@
       <input type="number" id="quantity1" name="quantity1" value="0" min="0">
       <button class="add-to-cart" data-price="8.99" data-drink="Drink 1">Add to Cart</button>
     </div>
-      <div class="quantity-scroll">
-    <button id="decrease-quantity">&#9660;</button>
-    <input type="number" id="quantity" value="1" min="1">
-    <button id="increase-quantity">&#9650;</button>
-  </div>
+    
 
     <div class="drink-option">
       <img src="millerlite2.jpeg" alt="Drink 2">
@@ -51,54 +47,22 @@
     </div>
   </main>
 
-  <script src="cart.js">
-     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const quantityInput = document.getElementById('quantity');
-      const increaseButton = document.getElementById('increase-quantity');
-      const decreaseButton = document.getElementById('decrease-quantity');
+  <script src="cart.js"></script>
+</body>
+</html>
 
-      let currentQuantity = 1;
+    <!-- ... Add more drink options as needed ... -->
 
-      increaseButton.addEventListener('click', increaseQuantity);
-      decreaseButton.addEventListener('click', decreaseQuantity);
+  <script src="cart.js"></script> <!-- Include a separate JavaScript file for cart functionality -->
+</body>
+</html>
 
-      function increaseQuantity() {
-        currentQuantity++;
-        updateQuantity();
-      }
+<body>
+  <!-- ... (previous body content) ... -->
 
-      function decreaseQuantity() {
-        if (currentQuantity > 1) {
-          currentQuantity--;
-          updateQuantity();
-        }
-      }
+  <!-- Button to go to the payment screen -->
+  <button id="checkout-button">Proceed to Payment</button>
 
-      function updateQuantity() {
-        quantityInput.value = currentQuantity;
-      }
-
-      // Scroll feature for mobile devices
-      let startY;
-
-      quantityInput.addEventListener('touchstart', function (e) {
-        startY = e.touches[0].clientY;
-      });
-
-      quantityInput.addEventListener('touchmove', function (e) {
-        e.preventDefault();
-        let deltaY = e.touches[0].clientY - startY;
-
-        if (deltaY > 10) {
-          decreaseQuantity();
-        } else if (deltaY < -10) {
-          increaseQuantity();
-        }
-
-        startY = e.touches[0].clientY;
-      });
-    });
-  </script>
+  <script src="cart.js"></script>
 </body>
 </html>
